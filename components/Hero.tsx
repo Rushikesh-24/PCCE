@@ -7,8 +7,6 @@ import * as THREE from "three";
 import gsap from "gsap";
 import { FlipLink } from "./Zoop";
 
-interface Props {}
-
 const Scene = () => {
   const texture = useTexture("./club.png");
   const meshRef = useRef<THREE.Mesh>(null);
@@ -33,7 +31,7 @@ const Scene = () => {
   );
 };
 
-const Hero: NextPage<Props> = ({}) => {
+const Hero: NextPage = ({}) => {
   const textRef = useRef(null);
   useEffect(() => {
     const textElement = textRef.current;

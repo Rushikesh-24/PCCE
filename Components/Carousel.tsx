@@ -29,7 +29,9 @@ const Carousel = () => {
     setCards((prevCards) => {
       const updatedCards = [...prevCards];
       const lastCard = updatedCards.pop();
-      updatedCards.unshift(lastCard);
+      if (lastCard) {
+        updatedCards.unshift(lastCard);
+      }
       return updatedCards;
     });
   };
@@ -38,7 +40,9 @@ const Carousel = () => {
     setCards((prevCards) => {
       const updatedCards = [...prevCards];
       const firstCard = updatedCards.shift();
-      updatedCards.push(firstCard);
+      if (firstCard) {
+        updatedCards.push(firstCard);
+      }
       return updatedCards;
     });
   };
@@ -59,7 +63,6 @@ const Carousel = () => {
           {cards.map((card, index) => {
             const isMiddle = index === 1;
             const isLeft = index === 0;
-            const isRight = index === 2;
 
             return (
               <div

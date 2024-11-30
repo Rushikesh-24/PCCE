@@ -3,17 +3,17 @@ import React from 'react'
 import RegisterImage from "@/assets/register.png"
 
 
-interface StepCardProps {
+interface StepCardsProps {
   bgColor: string;
   title: string;
   description: string;
 }
 
-export default function StepCard({
+export default function StepCards({
   bgColor,
   title,
   description
-}: StepCardProps) {
+}: StepCardsProps) {
   return (
     <div className='flex-shrink-0 border-r border-black w-[500px] overflow-hidden text-black' style={{background: bgColor}}>
       <Image 

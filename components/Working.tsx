@@ -1,10 +1,10 @@
 "use client"
 import Image from "next/image"
 import Disk from "@/assets/disc.png"
-import StepCard from "./StepCard"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
+import StepCards from "./StepCards";
 gsap.registerPlugin(ScrollTrigger)
 
 const stepCardsData = [
@@ -90,7 +90,7 @@ function Working() {
                 </div>
                 <div ref={scrollStepsRef} className="flex w-full relative" id="scroll-steps">
                 {stepCardsData.map((card, index) => (
-        <StepCard key={index} {...card} />
+        <StepCards key={index} {...card} />
       ))}
                 </div>
             </div>

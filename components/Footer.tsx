@@ -1,9 +1,8 @@
 import { NextPage } from "next";
 import Link from "next/link";
 
-interface Props {}
 
-const Footer: NextPage<Props> = ({}) => {
+const Footer: NextPage = ({}) => {
   return (
     <div className="bg-[#1d1d1d] w-full h-screen text-[#f5f1eb] overflow-hidden">
       <div className="w-full h-3/5">

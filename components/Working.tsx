@@ -1,4 +1,3 @@
-//@ts-nocheck
 "use client"
 import Image from "next/image"
 import Disk from "@/assets/disc.png"
@@ -32,9 +31,9 @@ const stepCardsData = [
   ]
 
 function Working() {
-    const containerRef = useRef(null);
-    const sectionRef = useRef(null);
-    const scrollStepsRef = useRef(null);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const sectionRef = useRef<HTMLDivElement>(null);
+    const scrollStepsRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const container = containerRef.current;

@@ -1,10 +1,10 @@
-import Categories from "@/components/Categories";
-import Footer from "../components/Footer";
-import Working from "@/components/Working";
-import Hero from "@/components/Hero";
-import Featured from "@/components/Featured";
-import MostSearched from "@/components/MostSearched";
-import LocalPulseFeatures from "@/components/WhatweDo";
+import Categories from "@/Components/Categories";
+import Working from "@/Components/Working";
+import Hero from "@/Components/Hero";
+import Featured from "@/Components/Featured";
+import MostSearched from "@/Components/MostSearched";
+import LocalPulseFeatures from "@/Components/WhatweDo";
+import Footer from "@/Components/Footer";
 
 export default function Home() {
   return (

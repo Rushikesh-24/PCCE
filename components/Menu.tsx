@@ -29,7 +29,6 @@ const Menu = () => {
   const circleRef = useRef<HTMLDivElement>(null);
   const hamburgerRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
-  const linkRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLDivElement[]>([]);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -44,7 +43,7 @@ const Menu = () => {
     const menu = menuRef.current;
     const cursor = document.getElementById("custom-cursor");
 
-    buttonRef.current.forEach((div, index) => {
+    buttonRef.current.forEach((div) => {
       gsap.fromTo(
         div,
         {

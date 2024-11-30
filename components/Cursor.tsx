@@ -12,6 +12,7 @@ const Cursor = () => {
       gsap.to(cursor, { x: clientX, y: clientY });
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const onMouseEnterElement = (event: Event) => {
       gsap.to(cursor, { scale: 4 });
     };

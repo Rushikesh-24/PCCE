@@ -3,7 +3,13 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
-function SearchProductCard({src, title, desc}:any) {
+interface SearchProductCardProps {
+  src: string;
+  title: string;
+  desc: string;
+}
+
+function SearchProductCard({src, title, desc}: SearchProductCardProps) {
   const router = useRouter()
   return (
     <div className='col-span-1 sm:col-span-2 md:col-span-3 p-4 flex items-center justify-center flex-col border'>

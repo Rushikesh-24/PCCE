@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Bricolage_Grotesque } from "next/font/google";
 import { ReactLenis } from '@/lib/lenis'
 import "./globals.css";
-import Cursor from "@/components/Cursor";
-import Menu from "@/components/Menu";
+import Cursor from "@/Components/Cursor";
+import Menu from "@/Components/Menu";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

@@ -1,20 +1,18 @@
+
 import React from 'react';
 import { Store, Utensils, Users } from 'lucide-react';
-//@ts-ignore
-const FeatureCard = ({ icon: Icon, title, description }) => (
+
+interface FeatureCardProps {
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  title: string;
+  description: string;
+}
+
+const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, description }) => (
   <div className="flex flex-col items-center text-center p-4">
     <Icon className="w-12 h-12 text-gray-800 mb-4" />
     <h3 className="lg:text-2xl text-xl font-semibold mb-2">{title}</h3>
     <p className="lg:text-lg md:text-base text-sm text-gray-700">{description}</p>
-  </div>
-);
-
-const ImageGallery = () => (
-  <div className="grid grid-cols-4 gap-4 h-64">
-    <img src="https://www.meetcharlescounty.com/clientuploads/page%20photos/slbe.jpg?_t=1653317040" alt="Local community 1" className="w-full h-full object-center object-cover rounded-lg col-span-2 row-span-2" />
-    <img src="https://www.meetcharlescounty.com/clientuploads/page%20photos/slbe.jpg?_t=1653317040" alt="Local community 2" className="w-full h-full object-center object-cover rounded-lg" />
-    <img src="https://www.meetcharlescounty.com/clientuploads/page%20photos/slbe.jpg?_t=1653317040" alt="Local community 3" className="w-full h-full object-center object-cover rounded-lg" />
-    <img src="https://www.meetcharlescounty.com/clientuploads/page%20photos/slbe.jpg?_t=1653317040" alt="Local community 4" className="w-full h-full object-center object-cover rounded-lg col-span-2" />
   </div>
 );
 
